@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.discription {
+  margin: 0.5rem 0;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  color: hsl(212, 21%, 14%);
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.desktopimg {
+  display: none;
+}
+
+.cross {
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  font: inherit;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+button:active {
+  background-color: hsl(158, 54%, 18%);
+}
+
+.price {
+  font-family: "Fraunces", serif;
+  display: flex;
+  flex-flow: row nowrap;
+  font-weight: bold;
+  font-size: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.price span:first-child {
+  color: hsl(158, 36%, 37%);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mobileimg {
+    display: none;
+  }
+
+  .desktopimg {
+    display: block;
+  }
+
+  img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
